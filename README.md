@@ -81,7 +81,7 @@ Here we go:
 
 Let's what code given above is doing:
 
-1. We have created to input boxes which take min and max number from the user.
+1. We have created two input boxes which take min and max number from the user.
 2. On the basis of min and max number entered by the user, a list displays all the numbers staring from min number to max number.
 
 ![Filter](https://raw.githubusercontent.com/NamitaMalik/Filters-in-AngularJS/master/Filters.png)
@@ -89,7 +89,7 @@ Let's what code given above is doing:
 Now, let's check how this **code** works:
 
 1. We take min and max input from user which defines our range.
-2. If you see in the above code, then you will notice that we have used a **filter** named as 'range' here.
+2. If you see the code given above, then you will notice that we have used a **filter** named as 'range' here.
 3. Now, let's see our **JavaScript** code. Here we have created a module and then using that module we have defined a **filter**. Inside the **filter** **function** we pass name of the **filter** as the argument and also define a **function** which returns another **function**.
 4. It is this returned **function** that actually does all the work and returns us the formatted result.
 5. This **function** which is returned, takes arguments in the following convention:
