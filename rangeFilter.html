@@ -1,44 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>Filters</title>
     <script src="angular.min.js"></script>
 </head>
 <body ng-App="myApp">
-<div ng-controller="FirstControl">
-    <label>Min Number</label>
-    <input type="text" ng-model="data.min">
-    <br>
-    <br>
-    <label>Max Number</label>
-    <input type="text" ng-model="data.max">
-    <br>
-    <br>
-    <label>Array of Numbers</label>
-    {{data.min|range:data.max}}
-    <br>
-    <br>
+<div>
+    Build-in Currency Filter:
+    <input type="text" ng-model="total.amount"> {{total.amount|currency:"$":0}}
+    <br/>
+    <hr/>
+    <br/><br/>
+
+    Custom Range Filter:
+    <label>Min Number</label> <input type="text" ng-model="data.min"><br><br>
+    <label>Max Number</label> <input type="text" ng-model="data.max"><br><br>
+    <label>Array of Numbers</label> {{data.min|range:data.max}}<br><br>
     <label>List of Numbers</label>
     <ul>
         <li ng-repeat="n in data.min|range:data.max" value="n">{{n}}</li>
     </ul>
 </div>
-<script>
-    var myApp = angular.module('myApp',[]);
-    myApp.filter('range',function(){
-        return function(min,max){
+<script type="application/javascript">
+    var myApp = angular.module('myApp', []);
+    myApp.filter('range', function () {
+        return function (min, max) {
             min = parseInt(min);
             max = parseInt(max);
-            var input =[];
-            for(var i=min;i<=max;i++){
+            var input = [];
+            for (var i = min; i <= max; i++) {
                 input.push(i);
             }
             return input;
         }
-    })
-    function FirstControl($scope){
-
-    }
+    });
 </script>
 </body>
 </html>
