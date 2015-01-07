@@ -97,7 +97,7 @@ Now, let's check how this **code** works:
 2. If you see in the above code, then you will notice that we have used a **filter** named as 'range' here.
 3. Now, let's see our **JavaScript** code. Here we have created a module and then using that module we have defined a **filter**. Inside the **filter** **function** we pass name of the **filter** as the argument and also define a **function** which returns another **function**.
 4. It is this returned **function** that actually does all the work and returns us the formatted result.
-5. This **function** which is returned, takes arguments in the following convention:
+5. This **function** which is returned, takes arguments in the following convention.
 
  A. 1st argument --> Expression to the left of '|' where **'filter'** is declared on the view.
  B. 2nd argument --> Expression to the right of the ':' where **'filter'** is declared on the view
