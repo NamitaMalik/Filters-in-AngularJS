@@ -36,7 +36,7 @@ Before we see both of these types, let us first see the syntax. **Filters** are 
 
 Let's see a demo given below:
 
-```
+```HTML
 Enter Amount: <input type="text" ng-model="data.amount"><br/><br/>
 $ Format: {{ data.amount | currency : "$" }}<br/>
 USD$ Format: {{ data.amount | currency : "USD$" }}
@@ -44,20 +44,13 @@ USD$ Format: {{ data.amount | currency : "USD$" }}
 
 In the above demo, we have used an in-built **filter** named as **currency**. This **filter** takes the symbol as its argument. So when we inout some amount in the text box, it shows the amount in a formatted manner with symbol of the currency appended to it.
 
-Actually, **currency** **filter** takes one more argument, which checks how many decimal places to round off. So let's see a slightly updated code here:
-
-```
-Enter Amount: <input type="text" ng-model="data.amount"><br/><br/>
-$ Format: {{ data.amount | currency : "$" : 0}}<br/>
-USD$ Format: {{ data.amount | currency : "USD$" : 0 }}
-```
 Now, let us make our own custom **filter**.
 
 We had discussed a use case, where we might have to generate numbers between a particular range. This can be done using our own **custom filter**
 
 Here we go:
 
-```
+```HTML
 <label>Min Number</label> <input type="text" ng-model="data.min"><br><br>
 <label>Max Number</label> <input type="text" ng-model="data.max"><br><br>
 <label>Array of Numbers</label> {{ data.min | range:data.max }}<br><br>
@@ -113,3 +106,5 @@ Now, let's check how this **code** works:
 11. In the rest of the code, we have also created a list of these numbers using a very powerful **AngularJS** directive **ng-repeat**.
 
 In this blog we have seen some basic stuff related to **filters**, there are a hell lot of situations where **filters** can be used, you just need to identify those situations and use this ultra cool feature of **AngularJS**!
+
+**NOTE:** You can checkout full working demo from this [link](https://github.com/NamitaMalik/Filters-in-AngularJS).
