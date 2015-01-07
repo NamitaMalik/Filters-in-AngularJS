@@ -100,6 +100,7 @@ Now, let's check how this **code** works:
 5. This **function** which is returned, takes arguments in the following convention.
 
  A. 1st argument --> Expression to the left of '|' where **'filter'** is declared on the view.
+
  B. 2nd argument --> Expression to the right of the ':' where **'filter'** is declared on the view
  C. A **filter** can take 'n' number of arguments.
 
