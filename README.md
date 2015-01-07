@@ -98,6 +98,7 @@ Now, let's check how this **code** works:
 3. Now, let's see our **JavaScript** code. Here we have created a module and then using that module we have defined a **filter**. Inside the **filter** **function** we pass name of the **filter** as the argument and also define a **function** which returns another **function**.
 4. It is this returned **function** that actually does all the work and returns us the formatted result.
 5. This **function** which is returned, takes arguments in the following convention:
+
    a. 1st argument --> Expression to the left of '|' where **'filter'** is declared on the view
    b. 2nd argument --> Expression to the right of the ':' where **'filter'** is declared on the view
    c. A **filter** can take 'n' number of arguments.
