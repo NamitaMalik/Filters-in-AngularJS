@@ -99,9 +99,10 @@ Now, let's check how this **code** works:
 4. It is this returned **function** that actually does all the work and returns us the formatted result.
 5. This **function** which is returned, takes arguments in the following convention:
 
-   a. 1st argument --> Expression to the left of '|' where **'filter'** is declared on the view
-   b. 2nd argument --> Expression to the right of the ':' where **'filter'** is declared on the view
-   c. A **filter** can take 'n' number of arguments.
+ A. 1st argument --> Expression to the left of '|' where **'filter'** is declared on the view.
+ B. 2nd argument --> Expression to the right of the ':' where **'filter'** is declared on the view
+ C. A **filter** can take 'n' number of arguments.
+
 6. For our **filter** 'range', we have taken only 2 arguments - min and max.
 7. To min, data.min is passed while max gets data.max.
 8. We have parsed the min and max passed to integers and then there is an input array to which all the numbers between min and max is passed.
