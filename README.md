@@ -84,6 +84,8 @@ Let's what code given above is doing:
 1. We have created to input boxes which take min and max number from the user.
 2. On the basis of min and max number entered by the user, a list displays all the numbers staring from min number to max number.
 
+![Filter](https://raw.githubusercontent.com/NamitaMalik/Filters-in-AngularJS/master/Filters.png)
+
 Now, let's check how this **code** works:
 
 1. We take min and max input from user which defines our range.
