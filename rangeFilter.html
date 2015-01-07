@@ -4,27 +4,44 @@
     <title>Filters</title>
     <script src="angular.min.js"></script>
 </head>
-<body ng-App="myApp">
-<div>
-    Build-in Currency Filter:
-    <input type="text" ng-model="total.amount"> {{total.amount|currency:"$":0}}
-    <br/>
+<body ng-app="myApp">
+<div ng-init="data.time = 1439999999999">
+    <h3>1. In-built Currency Filter: </h3>
     <hr/>
+    Enter Amount: <input type="text" ng-model="data.amount"><br/><br/>
+    $ Format: {{ data.amount | currency : "$" : 0 }}<br/>
+    USD$ Format: {{ data.amount | currency : "USD$" : 0 }}
+    <br/>
+    <h3>2. In-built Upper Case Filter:</h3>
+    <hr/>
+    Enter Name: <input type="text" ng-model="data.name"><br/><br/>
+    Upper Case Name: {{ data.name| uppercase }}<br/>
+    <br/>
+    <h3>3. In-built Date Filter:</h3>
+    <hr/>
+    {{ data.time | date :'dd/MMMM yyyy, HH:mm' }}
     <br/><br/>
 
-    Custom Range Filter:
+
+    <h3>Custom Range Filter:</h3>
+    <hr/>
     <label>Min Number</label> <input type="text" ng-model="data.min"><br><br>
     <label>Max Number</label> <input type="text" ng-model="data.max"><br><br>
-    <label>Array of Numbers</label> {{data.min|range:data.max}}<br><br>
+    <label>Array of Numbers</label> {{ data.min | range:data.max }}<br><br>
     <label>List of Numbers</label>
     <ul>
-        <li ng-repeat="n in data.min|range:data.max" value="n">{{n}}</li>
+        <li ng-repeat="n in data.min | range : data.max">{{n}}</li>
     </ul>
 </div>
 <script type="application/javascript">
     var myApp = angular.module('myApp', []);
     myApp.filter('range', function () {
         return function (min, max) {
+            if (min > max || max === undefined) {
+                var temp = max;
+                max = min;
+                min = temp || 1;
+            }
             min = parseInt(min);
             max = parseInt(max);
             var input = [];
