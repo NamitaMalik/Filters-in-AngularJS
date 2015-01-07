@@ -98,9 +98,13 @@ Now, let's check how this **code** works:
 3. Now, let's see our **JavaScript** code. Here we have created a module and then using that module we have defined a **filter**. Inside the **filter** **function** we pass name of the **filter** as the argument and also define a **function** which returns another **function**.
 4. It is this returned **function** that actually does all the work and returns us the formatted result.
 5. This **function** which is returned, takes arguments in the following convention:
- A. 1st argument --> Expression to the left of '|' where **'filter'** is declared on the view.
- B. 2nd argument --> Expression to the right of the ':' where **'filter'** is declared on the view.
- C. A **filter** can take 'n' number of arguments.
+
+  A. 1st argument --> Expression to the left of '|' where **'filter'** is declared on the view.
+
+  B. 2nd argument --> Expression to the right of the ':' where **'filter'** is declared on the view.
+
+  C. A **filter** can take 'n' number of arguments.
+
 6. For our **filter** 'range', we have taken only 2 arguments - min and max.
 7. To min, data.min is passed while max gets data.max.
 8. We have parsed the min and max passed to integers and then there is an input array to which all the numbers between min and max is passed.
