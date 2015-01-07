@@ -6,24 +6,26 @@
 </head>
 <body ng-app="myApp">
 <div ng-init="data.time = 1439999999999">
-    <h3>1. In-built Currency Filter: </h3>
-    <hr/>
-    Enter Amount: <input type="text" ng-model="data.amount"><br/><br/>
-    $ Format: {{ data.amount | currency : "$" : 0 }}<br/>
-    USD$ Format: {{ data.amount | currency : "USD$" : 0 }}
-    <br/>
-    <h3>2. In-built Upper Case Filter:</h3>
-    <hr/>
-    Enter Name: <input type="text" ng-model="data.name"><br/><br/>
-    Upper Case Name: {{ data.name| uppercase }}<br/>
-    <br/>
-    <h3>3. In-built Date Filter:</h3>
+
+    <h3>1. In-built Date Filter:</h3>
     <hr/>
     {{ data.time | date :'dd/MMMM yyyy, HH:mm' }}
     <br/><br/>
 
+    <h3>2. In-built Currency Filter: </h3>
+    <hr/>
+    Enter Amount: <input type="text" ng-model="data.amount"><br/><br/>
+    $ Format: {{ data.amount | currency : "$" : 0}}<br/>
+    USD$ Format: {{ data.amount | currency : "USD$" : 0 }}
+    <br/>
 
-    <h3>Custom Range Filter:</h3>
+    <h3>3. In-built Upper Case Filter:</h3>
+    <hr/>
+    Enter Name: <input type="text" ng-model="data.name"><br/><br/>
+    Upper Case Name: {{ data.name| uppercase }}<br/>
+    <br/>
+
+    <h3>4. Custom Range Filter:</h3>
     <hr/>
     <label>Min Number</label> <input type="text" ng-model="data.min"><br><br>
     <label>Max Number</label> <input type="text" ng-model="data.max"><br><br>
