@@ -10,12 +10,15 @@ Before moving further let's remember the line given below:
 By word, 'format' here we mean a lot of things, some of them listed below:
 
 1. **Date Format** : Suppose you want to show data in particular format say 'Month DD, YYYY' in your application and you need to use it at lot of places.
+
 2. **Search** : Suppose you have following set of data and you want to search to be applied on the above data using Father's Name only or maybe both Name and Father's Name:
+
 Name   | Father's Name
 ------ | ----------------
 Nancy  | Geoffery
 Peter  | John
 Kevin  | Peter
+
 3. Change format of text : You want to change the case of text entered by you, say anything entered in **lowercase** should change to **uppercase**
 
 4. You need to generate set of numbers within a particular range.
