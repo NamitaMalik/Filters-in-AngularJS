@@ -11,7 +11,7 @@ By word, **format** here we mean a lot of things, some of them listed below:
 
 1. **Date Format** : Suppose you want to show data in particular format say 'dd/MMMM yyyy, HH:mm' in your application and you need to use it at lot of places.
 
-2. **Change Format of Text** : You want to change the case of text entered by you, say anything provide in **lowercase** should change to **uppercase**
+2. **Change Format of Text** : You want to change the case of text provided by you, say anything provide in **lowercase** should change to **uppercase**
 
 3. **Range** : You need to generate set of numbers within a particular range.
 
