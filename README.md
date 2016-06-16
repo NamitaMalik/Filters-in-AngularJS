@@ -1,4 +1,4 @@
-Filters-in-AngularJS
+Filters in AngularJS
 ====================
 
 A **filter** in **AngularJS** formats the value of expression to display.
@@ -109,4 +109,12 @@ Now, let's check how this **code** works:
 
 In this blog we have seen some basic stuff related to **filters**, there are a hell lot of situations where **filters** can be used, you just need to identify those situations and use this ultra cool feature of **AngularJS**!
 
-**NOTE:** You can checkout full working demo from this [link](https://github.com/NamitaMalik/Filters-in-AngularJS).
+Follow Me
+---
+[Github](https://github.com/NamitaMalik)
+
+[Twitter](https://twitter.com/namita13_04)
+
+[LinkedIn](https://in.linkedin.com/in/namita-malik-a7885b23)
+
+[More Blogs By Me](https://namitamalik.github.io/)
