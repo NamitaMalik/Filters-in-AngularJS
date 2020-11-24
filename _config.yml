@@ -1,0 +1,8 @@
+title: Filters in AngularJS
+description: This blog discusses filters in AngularJS.
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-hacker
+
+gems:
+  - jekyll-mentions
